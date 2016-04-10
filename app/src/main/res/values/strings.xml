@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Layouts</string>
+
+
+    <string name="FrameLayout">FrameLayout</string>
+    <string name="LinearLayout">LinearLayout</string>
+    <string name="RelativeLayout">RelativeLayout</string>
+    <string name="TableLayout">TableLayout</string>
+    <string name="GridLayout">Grid Layout</string>
+    <string name="workshop_message">Workshop R</string>
+</resources>
