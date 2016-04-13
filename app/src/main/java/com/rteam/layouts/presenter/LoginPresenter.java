@@ -27,12 +27,9 @@ public class LoginPresenter {
         if (loginView != null) {
             loginView.showProgress();
         }
-
     }
 
-    void onPause(){
-
-    }
+    void onPause(){}
 
     void onDestroy(){
         loginView = null;
@@ -40,27 +37,22 @@ public class LoginPresenter {
 
     private void performLogin(String user, String pass){
         AsyncTask<String, Void, String> doLoginTask = new AsyncTask<String, Void, String>() {
-
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
                 loginView.showProgress();
             }
-
             @Override
             protected String doInBackground(String... params) {
                 String user = params[0];
                 String password = params[1];
-
                 try {
                     Thread.sleep(3000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-
                 return "Login Ok!!!";
             }
-
             @Override
             protected void onPostExecute(String message) {
                 super.onPostExecute(message);
